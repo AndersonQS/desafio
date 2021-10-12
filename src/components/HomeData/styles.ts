@@ -10,8 +10,9 @@ export const Picture = styled.img`
     `;
 
 export const Infos = styled.div`
-flex-direction: column;
+    flex-direction: column;
     display: flex;
+    border:2px ;
 
     .div{
         align-items: center;

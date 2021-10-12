@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Main, LadoEsquerdo, LadoDireito } from './styles';
+import { Container, Main, LadoEsquerdo } from './styles';
 import HomeData from '../../components/HomeData';
 import Busca from '../../components/Busca';
 import Service from '../../services/httpService'

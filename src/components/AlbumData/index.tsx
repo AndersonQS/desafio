@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container } from './styles';
+import { Container, Grades, LinkButton } from './styles';
 
 const AlbumData = (prop: any) => {
 
   return (
     <Container>
-      <Link to={`/Tracks/${prop.album.album.tracklist.split('/')[4]}`}>
-      <h1>nome do album: {prop.album.title}</h1>
-      </Link>
+      <Grades>
+
+      <LinkButton href={`/Tracks/${prop.album.album.tracklist.split('/')[4]}`}>
+      <li>
+        
+         {prop.album.title}
+         
+         </li>
+      </LinkButton>
+      </Grades>
     </Container>
     
 

@@ -15,14 +15,20 @@ html{
 *, button, input{
     border: 0;
     background: none;
+    text-decoration: none;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI Variable","Segoe UI",system-ui,ui-sans-serif,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    color: var(--black);
+    
 }
 ul{
     list-style: none;
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
 }
 :root{
 --primary: #fff;
+--branco:#ffff
 --black: #1b1f23;
 --gray: #586069;
 --gray-light: #6a737d;

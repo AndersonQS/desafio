@@ -4,7 +4,7 @@ import Busca from '../../components/Busca';
 import Button from '../../components/Button';
 import Service from '../../services/httpService';
 
-import { Container} from './styles';
+import { Container, Grade } from './styles';
 
 const Album: React.FC = (props: any) => {
   const [albums, setAlbums] = useState<any>([])
@@ -23,8 +23,16 @@ const Album: React.FC = (props: any) => {
   return(
     <Container>
       <Busca changeText={populate}/>
+    
+      <h1>
+        Nome do Album: 
+        </h1> 
+        <Grade>
         {albums.map((album: any) => <AlbumData album = {album}/>)}
-      <Button />
+       
+
+       </Grade>
+
 
     </Container>
   );
